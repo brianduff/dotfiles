@@ -1,2 +1,0 @@
-install:Installs config from the git repo, restart shell
-edit:Opens the config git repository in subl

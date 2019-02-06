@@ -1,5 +1,0 @@
-complete -F riker::complete go
-
-go() {
-  riker::invoke_subcommand go $@
-}
