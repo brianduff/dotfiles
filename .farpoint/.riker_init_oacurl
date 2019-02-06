@@ -1,0 +1,5 @@
+complete -F riker::complete oacurl
+
+oacurl() {
+  riker::invoke_subcommand oacurl $@
+}
