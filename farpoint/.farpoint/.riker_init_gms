@@ -1,0 +1,5 @@
+complete -F riker::complete gms
+
+gms() {
+  riker::invoke_subcommand gms $@
+}

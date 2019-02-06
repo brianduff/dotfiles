@@ -1,0 +1,22 @@
+clean --expunge_async
+#build --nobuild_runfile_links --noannounce_rc --jobs=1000 --noexperimental_check_output_files 
+# Disabled because of cr/117667326 :(
+# build --workspace_status_command=/bin/true
+test --test_output=errors --test_summary=detailed
+
+# Switch this back on again for magicjar (it's turned off by
+# oz/tools/blazerc
+#build --build_runfile_links
+
+# Specify the android SDK to use
+#build --noprogress_in_terminal_title --nobuild_runfile_links --noannounce_rc --jobs=1000 --noexperimental_check_output_files --workspace_status_command=/bin/true
+build --jobs=1000
+
+build --javacopt=-XDshouldStopPolicyIfError=FLOW
+
+# Gmscore stuff
+build --android_sdk=//third_party/java/android/android_sdk_linux/platforms/gmscore_system:android_sdk_tools
+#build --android_sdk=//third_party/java/android/android_sdk_linux/platforms/stable_system:android_sdk_tools
+
+# Sigh.
+import %workspace%/java/com/google/android/gmscore/blazerc

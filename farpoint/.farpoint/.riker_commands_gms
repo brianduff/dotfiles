@@ -1,0 +1,21 @@
+go:Goes to a branch directory
+gosetmain:Sets the main branch to use for go
+git:Runs a git command in the OneUp directory
+repo:Runs a repo command in the OneUp directory
+clean:Delete the out directory in the background (quickly)
+tapas:Run tapas in the branch dir
+sync:Sync & rebase vendor/unbundled_google/packages/OneUp
+build:Build specified tapas or gradle targets
+start:Starts a named branch
+edit:Opens a file located using find in the EDITOR
+log:Display the log of a file
+install:adb install the apk. If --remote, then use the adb tunnel
+project:cd to vendor/unbundled_google/packages/OneUp
+find:Finds a file
+upload:Uploads the current branch
+change:Creates a commit
+mail:Uploads a change from the current branch and mails it
+snapshot:Commits working changes as an amend, uploads a new patch set
+init:Initializes a gmscore client for the given cheese
+subl:Opens SublimeText
+presubmit:Runs tools/common/presubmit.sh from the OneUp directory
