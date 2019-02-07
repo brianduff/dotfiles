@@ -7,7 +7,7 @@ load() {
 }
 
 #source /google/src/cloud/bduff/gms_command/google3/experimental/users/bduff/shell/init.sh
-source /usr/local/google/home/bduff/.farpoint/init.sh
+source $HOME/.farpoint/init.sh
 
 load functions.sh
 load finder.sh
