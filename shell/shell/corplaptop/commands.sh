@@ -28,3 +28,8 @@ describe mountandroid "Mounts the android sparseimage"
 mountandroid() {
   hdiutil attach ~/Documents/android.dmg.sparseimage -mountpoint ~/Documents/code/android
 }
+
+# Override the hideously slow piper one with one that just jumps quickly.
+g4d() {
+  cd /google/src/cloud/bduff/$1/google3
+}

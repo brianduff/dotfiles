@@ -1,4 +1,4 @@
-# Multi machine bash_profile for bduff.
+# bduff's bash_profile.
 
 load() {
   if [ -f $HOME/shell/$1 ]; then
@@ -6,7 +6,6 @@ load() {
   fi
 }
 
-#source /google/src/cloud/bduff/gms_command/google3/experimental/users/bduff/shell/init.sh
 source $HOME/.farpoint/init.sh
 
 load functions.sh
@@ -32,14 +31,6 @@ if bduff::is_corp_linux; then
   load corplinux/commands.sh
 fi
 
-#export GMS_DIR=/todo/set/me
-#source /usr/local/google/home/bduff/.farpoint/init.sh
-
-#source /usr/local/google/home/bduff/.devices.config
-
-
-alias buildNearby='/google/src/files/head/depot/google3/experimental/users/xlythe/scripts/Nearby.sh'
-alias install='/google/src/files/head/depot/google3/experimental/users/xlythe/scripts/NearbyApp.sh'
 # Path to Mobile Harness platform tool.
 export PATH=$path_platform_tools:$PATH
 # Path to Mobile Harness ADB.

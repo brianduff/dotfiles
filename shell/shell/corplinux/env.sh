@@ -6,10 +6,6 @@ PS1="\[\033[1;34m\]\h \[\$(prodcertstatus --check_remaining_hours=1 > /dev/null 
 # Add NX to the path
 export PATH=/usr/NX/bin:$PATH
 
-export CODE_DIR=/usr/local/google/home/bduff/code
-
-export GMS_DIR=$CODE_DIR/gms
-
 loadmodule corplinux android_sdk
 loadmodule corplinux blaze_completion
 loadmodule corplinux p4diff

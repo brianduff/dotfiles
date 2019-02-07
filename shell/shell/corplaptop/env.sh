@@ -1,12 +1,11 @@
-# Environment variables for corp laptop
+# Environment variables specific to corp laptop
 
-export MOUNTED_CODE_DIR=/Volumes/code
-export SSH_TUNNEL_PORT=2222
+loadmodule corplaptop bagpipe
+loadmodule corplaptop brew
+loadmodule corplaptop nvm
 
 # PATH for Android development.
 export PATH=~/bin:/opt/local/bin:$PATH
 
-export CODE_DIR=~/Documents/code
-
-# TODO(bduff): set me.
-export GMS_DIR=$CODE_DIR/android/gms
+# EDITOR on corp laptop is VSCode (i.e. code)
+export EDITOR="code -w"

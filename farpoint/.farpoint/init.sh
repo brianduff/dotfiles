@@ -8,11 +8,7 @@ farpoint::require() {
   fi
 }
 
-farpoint::require gms.sh
 farpoint::require farpoint.sh
-
-# Configuration defaults:
-export GMS_BUILD_FLAGS="--daemon --parallel"
 
 # Configuration overrides:
 if [ -e $HOME/.config/farpoint.conf ]; then
