@@ -14,6 +14,22 @@ go::google3() {
   fi
 }
 
+riker::subcommand fig "Go to the fig directory"
+go::fig() {
+  g4d dev_fig
+}
+
+riker::subcommand pointy "Go to the pointy source"
+go::pointy() {
+  go google3
+  cd experimental/users/bduff/java/com/google/pointy
+}
+
+riker::subcommand pointy "Go to the dotfiles dir"
+go::dotfiles() {
+  cd $HOME/dotfiles
+}
+
 #
 # With no argument: go to the nearest ancestor google3 directory.
 # With one argument: go to the google3 directory under the specified
@@ -37,7 +53,8 @@ g3() {
       cd ..
     done
     if [ "`basename $PWD`" = "/" ]; then
-      echo "Don't know which google3 dir to go to."
+      # if all else fails, go to the dev_fig directory.
+      go fig
     fi
   fi
 }

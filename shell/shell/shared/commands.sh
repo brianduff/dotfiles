@@ -26,7 +26,6 @@ title() {
 # Set up the default title
 title "$USER@$(hostname)"
 
-loadmodule shared git
 loadmodule shared go
 
 riker::subcommand code "Go to the code directory"
@@ -34,7 +33,5 @@ go::code() {
   cd $CODE_DIR
 }
 
-
 loadmodule shared config
-loadmodule shared gms
 loadmodule shared adb

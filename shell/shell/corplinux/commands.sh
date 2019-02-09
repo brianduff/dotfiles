@@ -44,11 +44,6 @@ blazerun() {
   /google/src/head/depot/google3/devtools/blaze/scripts/blaze-run.sh $*
 }
 
-unalias e
-e() {
-  emacsclient -t $*
-}
-
 trimall() {
   git5 diff --name-only --relative | xargs perl -pi -e 's/[ \t]*$//g'
 }
@@ -75,18 +70,6 @@ adb_install() {
   adb install -r $1
   kill $logcatpid
 }
-
-copres() {
-  blaze build java/com/google/social/boq/copresence:boqlet
-  ./social/boq/run.sh Copresence
-}
-
-copres_stubby() {
-  tmpfile=$(mktemp)
-  /google/data/ro/projects/tonic/tonicauth --tonic_backend=dev --policy_name=social-copresence-debug --user=testduff@gmail.com --reason=test --datatype_scope=50400 --duration=1h --get_gaia_mint > $tmpfile
-  stubby call --deadline=60 http://localhost:9876 $1 --proto2 --rpc_creds_file=$tmpfile --infile=$2
-}
-
 
 install_all() {
   devices=$(adb devices | cut -f1 | grep -v List | awk 'NF > 0')

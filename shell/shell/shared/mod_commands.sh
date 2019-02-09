@@ -15,7 +15,7 @@ commands() {
   local tmpfile=$(mktemp)
   sort $COMMAND_DESCRIPTIONS_FILE > $tmpfile
   mv -f $tmpfile $COMMAND_DESCRIPTIONS_FILE
-  printf "Useful commands:\n\n"
+  printf "Hello Brian! Here are useful commands:\n\n"
   IFS=$'\n'
   for line in $(cat $COMMAND_DESCRIPTIONS_FILE); do
     local subcommand=${line%%:*}
@@ -31,4 +31,9 @@ commands() {
 describe fone "Finds one file"
 fone() {
   finder::find_file $@
+}
+
+describe c "Open vscode in this directory"
+c() {
+  code .
 }
