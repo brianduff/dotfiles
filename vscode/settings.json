@@ -1,0 +1,22 @@
+{
+    "editor.tabSize": 2,
+    "window.zoomLevel": 0,
+
+    // Format files on save
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.java$",
+                "cmd": "google-java-format -r ${file}"
+            },
+            {
+                "match": "\\.proto$",
+                "cmd": "clang-format -i ${file}"
+            },
+            {
+                "match": "BUILD$",
+                "cmd": "buildifier ${file}"
+            },
+        ]
+    }
+}
