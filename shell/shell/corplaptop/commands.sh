@@ -1,5 +1,10 @@
 # Commands for corp laptop.
 
+describe fixpaste "Fixes broken bracketed paste mode"
+fixpaste() {
+  printf "\e[?2004l"
+}
+
 describe mountcode "Mounts ${CODE_DIR} on the local ssh tunnel at ${MOUNTED_CODE_DIR}. --notunnel for miao."
 mountcode() {
   local host=127.0.0.1
