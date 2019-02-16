@@ -1,12 +1,12 @@
-riker::declare_command go "Jumps to a directory"
+riker::declare_command g "Jumps to a directory"
 
 riker::subcommand home "There's no place like it"
-go::home() {
+g::home() {
   cd $HOME
 }
 
 riker::subcommand google3 "Go to the nearest google3 dir"
-go::google3() {
+g::google3() {
   if [ -d "google3" ]; then
     cd google3
   else
@@ -15,18 +15,18 @@ go::google3() {
 }
 
 riker::subcommand fig "Go to the fig directory"
-go::fig() {
+g::fig() {
   g4d dev_fig
 }
 
 riker::subcommand pointy "Go to the pointy source"
-go::pointy() {
+g::pointy() {
   go google3
   cd experimental/users/bduff/java/com/google/pointy
 }
 
 riker::subcommand pointy "Go to the dotfiles dir"
-go::dotfiles() {
+g::dotfiles() {
   cd $HOME/dotfiles
 }
 
@@ -54,7 +54,7 @@ g3() {
     done
     if [ "`basename $PWD`" = "/" ]; then
       # if all else fails, go to the dev_fig directory.
-      go fig
+      g fig
     fi
   fi
 }

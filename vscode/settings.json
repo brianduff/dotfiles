@@ -19,5 +19,6 @@
             },
         ]
     },
-    "bazel.executable": "blaze"
+    "bazel.executable": "blaze",
+    "editor.fontSize": 14
 }
