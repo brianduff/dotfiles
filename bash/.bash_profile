@@ -21,6 +21,7 @@ load $HOSTNAME/commands.sh
 # These are designed not to care about the hostname, so they still work
 # after machine upgrades etc.
 
+# TODO(bduff): Remove / replace these in the new world... <cough>
 if bduff::is_corp_laptop; then
   load corplaptop/env.sh
   load corplaptop/commands.sh
@@ -30,14 +31,3 @@ if bduff::is_corp_linux; then
   load corplinux/env.sh
   load corplinux/commands.sh
 fi
-
-# Path to Mobile Harness platform tool.
-export PATH=$path_platform_tools:$PATH
-# Path to Mobile Harness ADB.
-export PATH=$path_adb:$PATH
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/google-cloud-sdk/path.bash.inc' ]; then . '$HOME/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '$HOME/google-cloud-sdk/completion.bash.inc' ]; then . '$HOME/google-cloud-sdk/completion.bash.inc'; fi
