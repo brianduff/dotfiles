@@ -10,4 +10,3 @@ loadmodule corplinux android_sdk
 loadmodule corplinux blaze_completion
 loadmodule corplinux p4diff
 loadmodule corplinux oacurl
-loadmodule corplinux adb
