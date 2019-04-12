@@ -17,6 +17,3 @@ fi
 # Where tools are installed on all systems. Can be overridden per-machine.
 export TOOLS_DIR=$HOME/tools
 
-# devices
-export N6=NP5A340520
-export N5A=021e9cacf0a6a49c
