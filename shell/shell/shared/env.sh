@@ -20,6 +20,3 @@ export TOOLS_DIR=$HOME/tools
 # devices
 export N6=NP5A340520
 export N5A=021e9cacf0a6a49c
-
-# Add javabin to PATH
-export PATH=$HOME/javabin:$PATH
