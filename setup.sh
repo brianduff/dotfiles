@@ -3,7 +3,7 @@
 # Before installing, need to first install brew, then brew install stow, if linux.
 # TODO(bduff): do this here if stow not available?
 
-stow bash blaze farpoint git hg shell
+stow bash farpoint git hg shell
 echo "Installed homedir bits"
 
 if [ -d "$HOME/Library/Application Support/Code/User" ]; then
