@@ -1,2 +1,2 @@
 # dotfiles
-These are my dotfiles.
+These are Brian Duff's dotfiles. They contain things that are useful to me :)
