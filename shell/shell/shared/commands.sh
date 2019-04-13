@@ -36,3 +36,4 @@ go::code() {
 loadmodule shared config
 loadmodule shared adb
 loadmodule shared gcloud
+loadmodule shared android

@@ -14,4 +14,3 @@ fi
 
 # Where tools are installed on all systems. Can be overridden per-machine.
 export TOOLS_DIR=$HOME/tools
-
