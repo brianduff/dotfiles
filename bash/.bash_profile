@@ -31,3 +31,4 @@ if bduff::is_corp_linux; then
   load corplinux/env.sh
   load corplinux/commands.sh
 fi
+export GPG_TTY=$(tty)

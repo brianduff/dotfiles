@@ -2,3 +2,8 @@
 [user]
 name = Brian Duff
 email = cairndubh@gmail.com
+
+# Include a local, machine specific configuration file that's not
+# checked into my dotfiles configuration.
+[include]
+path = .gitconfig.local
