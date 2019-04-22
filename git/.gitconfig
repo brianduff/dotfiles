@@ -7,3 +7,4 @@ email = cairndubh@gmail.com
 # checked into my dotfiles configuration.
 [include]
 path = .gitconfig.local
+
