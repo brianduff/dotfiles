@@ -28,11 +28,6 @@ title "$USER@$(hostname)"
 
 loadmodule shared go
 
-riker::subcommand code "Go to the code directory"
-go::code() {
-  cd $CODE_DIR
-}
-
 loadmodule shared config
 loadmodule shared adb
 loadmodule shared gcloud

@@ -1,7 +1,5 @@
 # Riker is a shell module that makes it easy to implement commands
 # that have subcommands.
-#
-# Author: bduff@google.com
 script_dir=$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)
 
 riker_command_descriptions=$script_dir/.riker_commands

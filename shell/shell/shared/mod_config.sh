@@ -17,7 +17,7 @@ config::edit() {
   subl $CONFIG_GIT
 }
 
-riker::subcommand config "The config git directory" go
-go::config() {
+riker::subcommand config "The config git directory" g
+g::config() {
   cd $CONFIG_GIT
 }
