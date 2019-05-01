@@ -1,5 +1,7 @@
 # bduff's bash_profile.
 
+#CHEF.NO.SOURCE
+
 load() {
   if [ -f $HOME/shell/$1 ]; then
     source $HOME/shell/$1
