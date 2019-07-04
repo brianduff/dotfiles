@@ -33,4 +33,12 @@ if bduff::is_corp_linux; then
   load corplinux/env.sh
   load corplinux/commands.sh
 fi
+
+# I want a unified bash history, dang it.
+shopt -s histappend
+
 export GPG_TTY=$(tty)
+
+if [ -f $HOME/.bash_profile_local ]; then
+  source $HOME/.bash_profile_local
+fi
