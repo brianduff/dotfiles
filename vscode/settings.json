@@ -23,7 +23,7 @@
             },
         ]
     },
-    "editor.fontSize": 15,
+    "editor.fontSize": 14,
     "editor.fontFamily": "Inconsolata, Menlo, Monaco, 'Courier New', monospace",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
