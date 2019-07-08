@@ -29,4 +29,5 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "breadcrumbs.enabled": true,
     "workbench.editor.highlightModifiedTabs": true,
+    "python.jediEnabled": false,
 }
