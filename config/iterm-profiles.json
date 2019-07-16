@@ -116,7 +116,7 @@
         "Blue Component" : 0.3333333432674408
       },
       "Use Italic Font" : true,
-      "Unlimited Scrollback" : false,
+      "Unlimited Scrollback" : true,
       "Keyboard Map" : {
         "0xf700-0x260000" : {
           "Text" : "[1;6A",
