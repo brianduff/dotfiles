@@ -1,0 +1,2 @@
+# Colorful ls
+alias ls='ls -G'

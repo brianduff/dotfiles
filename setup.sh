@@ -41,7 +41,7 @@ fi
 
 echo "Linking home dir config files"
 pushd $DIR > /dev/null
-stow --target=$HOME bash farpoint git hg shell
+stow --target=$HOME bash farpoint git hg shell zsh
 popd > /dev/null
 
 
