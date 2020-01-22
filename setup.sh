@@ -35,10 +35,13 @@ else
   fi
 fi
 
+if [ -f "$HOME/.bash_profile" -a ! -f "$HOME/.bash_profile_local" ]; then
+  mv $HOME/.bash_profile $HOME/.bash_profile_local
+fi
 
 echo "Linking home dir config files"
 pushd $DIR > /dev/null
-stow bash farpoint git hg shell
+stow --target=$HOME bash farpoint git hg shell
 popd > /dev/null
 
 
