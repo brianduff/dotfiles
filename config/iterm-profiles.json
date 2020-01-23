@@ -116,7 +116,7 @@
         "Blue Component" : 0.3333333432674408
       },
       "Use Italic Font" : true,
-      "Unlimited Scrollback" : false,
+      "Unlimited Scrollback" : true,
       "Keyboard Map" : {
         "0xf700-0x260000" : {
           "Text" : "[1;6A",
@@ -301,7 +301,7 @@
         "Red Component" : 0.3333333432674408,
         "Blue Component" : 1
       },
-      "Name" : "Brian's Profile",
+      "Name" : "Brian",
       "Cursor Text Color" : {
         "Green Component" : 1,
         "Red Component" : 1,
@@ -314,7 +314,7 @@
         "Blue Component" : 0.73333334922790527
       },
       "Transparency" : 0,
-      "Guid" : "254A7620-F193-4343-B958-17234136438E",
+      "Guid" : "D6CCF5AB-4261-4AE2-A8C0-B7D14BB2D09D",
       "Custom Directory" : "No",
       "Link Color" : {
         "Red Component" : 0,

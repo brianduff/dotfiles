@@ -39,4 +39,5 @@
     "diffEditor.ignoreTrimWhitespace": true,
     "editor.fontFamily": "FiraCode-Retina,Inconsolata,Menlo,Monaco,'Courier New',monospace",
     "editor.fontLigatures": true,
+    "python.jediEnabled": false
 }
