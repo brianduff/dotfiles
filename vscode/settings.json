@@ -24,10 +24,19 @@
         ]
     },
     "editor.fontSize": 14,
-    "editor.fontFamily": "Inconsolata, Menlo, Monaco, 'Courier New', monospace",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "breadcrumbs.enabled": true,
     "workbench.editor.highlightModifiedTabs": true,
     "files.trimTrailingWhitespace": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "workbench.statusBar.visible": true,
+    "editor.minimap.enabled": false,
+    "git.enableSmartCommit": true,
+    "workbench.colorTheme": "Default Light+",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.fontFamily": "FiraCode-Retina,Inconsolata,Menlo,Monaco,'Courier New',monospace",
+    "editor.fontLigatures": true,
 }
