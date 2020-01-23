@@ -35,9 +35,9 @@
     "workbench.statusBar.visible": true,
     "editor.minimap.enabled": false,
     "git.enableSmartCommit": true,
-    "workbench.colorTheme": "Default Light+",
     "diffEditor.ignoreTrimWhitespace": true,
     "editor.fontFamily": "FiraCode-Retina,Inconsolata,Menlo,Monaco,'Courier New',monospace",
     "editor.fontLigatures": true,
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "workbench.colorTheme": "Quiet Light"
 }
