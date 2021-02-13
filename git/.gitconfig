@@ -8,3 +8,5 @@ email = cairndubh@gmail.com
 [include]
 path = .gitconfig.local
 
+[color]
+	ui = auto
