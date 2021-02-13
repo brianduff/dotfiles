@@ -7,6 +7,16 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "breadcrumbs.enabled": true,
     "workbench.editor.highlightModifiedTabs": true,
+    "files.trimTrailingWhitespace": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "workbench.statusBar.visible": true,
+    "editor.minimap.enabled": false,
+    "git.enableSmartCommit": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.fontFamily": "FiraCode-Retina,Inconsolata,Menlo,Monaco,'Courier New',monospace",
+    "editor.fontLigatures": true,
     "python.jediEnabled": false,
     "workbench.colorTheme": "Quiet Light",
     "editor.minimap.enabled": false,
