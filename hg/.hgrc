@@ -1,6 +1,6 @@
 
 [ui]
-username = Brian Duff <bduff@fb.com>
+username = Brian Duff <cairndubh@gmail.com>
 ignore = ~/.hgignore
 ignore.myignore=~/.gitignore
 
@@ -11,6 +11,3 @@ revert--all=false
 [extensions]
 purge=
 journal=
-
-[hint]
-ack = sl-short-headers commitcloud-old-commits
