@@ -6,10 +6,6 @@ if hash code 2>/dev/null; then
   export EDITOR="code -w"
 fi
 
-# Color prompt
-autoload -U promptinit && promptinit
-prompt walters green
-
 # Load os-specific things.
 UNAME=$(uname)
 OS_RC="$HOME/.zshrc-$UNAME:l"
@@ -17,3 +13,4 @@ if [ -f $OS_RC ]; then
   source $OS_RC
 fi
 
+export PATH=$HOME/bin:$PATH

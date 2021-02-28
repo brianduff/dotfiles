@@ -1,6 +1,6 @@
 {
     "editor.tabSize": 2,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
 
     // Format files on save
     "emeraldwalk.runonsave": {
