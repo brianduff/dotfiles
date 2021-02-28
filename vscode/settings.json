@@ -1,29 +1,8 @@
 {
     "editor.tabSize": 2,
-    "window.zoomLevel": 1,
-
-    // Format files on save
-    "emeraldwalk.runonsave": {
-        "commands": [
-            {
-                "match": "\\.java$",
-                "cmd": "google-java-format -r ${file}"
-            },
-            {
-                "match": "\\.proto$",
-                "cmd": "clang-format -i ${file}"
-            },
-            {
-                "match": "BUILD$",
-                "cmd": "buildifier ${file}"
-            },
-            {
-                "match": "WORKSPACE$",
-                "cmd": "buildifier ${file}"
-            },
-        ]
-    },
     "editor.fontSize": 14,
+    "editor.fontFamily": "FiraCode-Retina",
+    "editor.fontLigatures": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "breadcrumbs.enabled": true,
@@ -39,5 +18,32 @@
     "editor.fontFamily": "FiraCode-Retina,Inconsolata,Menlo,Monaco,'Courier New',monospace",
     "editor.fontLigatures": true,
     "python.jediEnabled": false,
-    "workbench.colorTheme": "Quiet Light"
+    "workbench.colorTheme": "Quiet Light",
+    "editor.minimap.enabled": false,
+    "files.autoSave": "afterDelay",
+    "git.enableSmartCommit": true,
+    "terminal.integrated.scrollback": 10000,
+    "java.semanticHighlighting.enabled": true,
+    "java.requirements.JDK11Warning": false,
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "python.languageServer": "Pylance",
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none",
+    "java.imports.gradle.wrapper.checksums": [
+        {
+            "sha256": "c22f479a0915eb44b801b464f97fc394998186fcd93b571601bea9a8c5a6a445",
+            "allowed": true
+        },
+        {
+            "sha256": "156fd1b10d39a3e25e4ac12740b0746c1ea6490c440c035f8efbf1482e9d781d",
+            "allowed": true
+        }
+    ],
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
+    "java.project.importHint": false,
+    "python.showStartPage": false,
+    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.refactor.renameFromFileExplorer": "autoApply",
+    "editor.columnSelection": false,
 }
