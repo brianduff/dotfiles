@@ -33,6 +33,11 @@ else
     echo "Installing stow"
     sudo apt-get install stow
   fi
+
+  # Link vscode settings to the right place.
+  mkdir -p $HOME/.config/Code/User
+  ln -s $DIR/vscode/settings.json $HOME/.config/Code/User/settings.json
+
 fi
 
 if [ -f "$HOME/.bash_profile" -a ! -f "$HOME/.bash_profile_local" ]; then
