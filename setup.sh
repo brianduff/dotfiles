@@ -38,6 +38,17 @@ else
   mkdir -p $HOME/.config/Code/User
   ln -s $DIR/vscode/settings.json $HOME/.config/Code/User/settings.json
 
+  # Get FiraCode fonts.
+  if ! [ -f "$HOME/.local/share/fonts/FiraCode-Regular.ttf" ]; then
+    pushd $(mktemp -d)
+    wget -q https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip
+    unzip -q Fira_Code_v5.2.zip
+    mkdir -p $HOME/.local/share/fonts/
+    cp ttf/* $HOME/.local/share/fonts/
+    popd
+    fc-cache -f -v
+  fi
+
 fi
 
 if [ -f "$HOME/.bash_profile" -a ! -f "$HOME/.bash_profile_local" ]; then

@@ -1,7 +1,7 @@
 {
     "editor.tabSize": 2,
     "editor.fontSize": 14,
-    "editor.fontFamily": "FiraCode-Retina",
+    "editor.fontFamily": "Fira Code Retina,FiraCode-Retina,FiraCode",
     "editor.fontLigatures": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
