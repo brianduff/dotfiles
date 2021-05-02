@@ -42,4 +42,5 @@
     "java.configuration.checkProjectSettingsExclusions": false,
     "java.refactor.renameFromFileExplorer": "autoApply",
     "editor.columnSelection": false,
+    "editor.codeLensFontFamily": "Fira Code Retina,FiraCode-Retina"
 }
