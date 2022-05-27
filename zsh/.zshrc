@@ -21,4 +21,4 @@ fi
 export PATH=$HOME/bin:$PATH
 
 # A prompt!
-export PROMPT="%* %{$fg[cyan]%}%c%{$fg_bold[green]%}$(__git_ps1 ' (%s)')%{$reset_color%}> "
+#export PROMPT="%* %{$fg[cyan]%}%c%{$fg_bold[green]%}$(__git_ps1 ' (%s)')%{$reset_color%}> "
