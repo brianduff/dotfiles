@@ -39,13 +39,16 @@ else
   ln -s $DIR/vscode/settings.json $HOME/.config/Code/User/settings.json
 
   # Get FiraCode fonts.
-  if ! [ -f "$HOME/.local/share/fonts/FiraCode-Regular.ttf" ]; then
+  if ! [ -f "$HOME/Library/Fonts/FiraCode-Regular.ttf" ]; then
+    echo "Installing FiraCode font..."
     pushd $(mktemp -d)
+    echo "   Downloading..."
     wget -q https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip
     unzip -q Fira_Code_v5.2.zip
-    mkdir -p $HOME/.local/share/fonts/
-    cp ttf/* $HOME/.local/share/fonts/
+    mkdir -p $HOME/Library/Fonts/
+    cp ttf/* $HOME/Library/Fonts
     popd
+    echo "   Updating font cache..."
     fc-cache -f -v
   fi
 
@@ -59,6 +62,5 @@ echo "Linking home dir config files"
 pushd $DIR > /dev/null
 stow --target=$HOME bash farpoint git hg shell zsh
 popd > /dev/null
-
 
 echo "Setup is done!"
