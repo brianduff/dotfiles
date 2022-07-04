@@ -42,5 +42,8 @@
     "java.configuration.checkProjectSettingsExclusions": false,
     "java.refactor.renameFromFileExplorer": "autoApply",
     "editor.columnSelection": false,
-    "editor.codeLensFontFamily": "Fira Code Retina,FiraCode-Retina"
+    "editor.codeLensFontFamily": "Fira Code Retina,FiraCode-Retina",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "security.workspace.trust.untrustedFiles": "open"
 }
