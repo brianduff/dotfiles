@@ -1,5 +1,0 @@
-complete -F riker::complete g
-
-g() {
-  riker::invoke_subcommand g $@
-}

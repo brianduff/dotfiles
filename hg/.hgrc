@@ -1,6 +1,6 @@
 
 [ui]
-username = Brian Duff <cairndubh@gmail.com>
+username = Brian Duff <brian@dufflin.com>
 ignore = ~/.hgignore
 ignore.myignore=~/.gitignore
 

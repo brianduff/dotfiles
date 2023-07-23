@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
 name = Brian Duff
-email = cairndubh@gmail.com
+email = brian@dufflin.com
 
 # Include a local, machine specific configuration file that's not
 # checked into my dotfiles configuration.

@@ -1,5 +1,0 @@
-complete -F riker::complete config
-
-config() {
-  riker::invoke_subcommand config $@
-}

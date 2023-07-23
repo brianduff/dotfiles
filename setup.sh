@@ -9,9 +9,27 @@ if [ "$(uname)" == "Darwin" ]; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
   if ! [ -x "$(command -v stow)" ]; then
-    echo "Installing stow"
+    echo "Installing stow..."
     brew install stow
   fi
+
+  if ! [ -x "$(command -v code)"]; then
+    echo "Installing VSCode..."
+    brew install visual-studio-code
+  fi
+
+  if ! [ -x "$(command -v cargo)"]; then
+    echo "Installing rust..."
+    brew install rust
+  fi
+
+
+  if ! [ -x "$(brew list font-fira-code 2>&1 > /dev/null)"]; then
+    echo "Installing fira code font..."
+    brew tap homebrew/cask-fonts
+    brew install --cask font-fira-code
+  fi
+
 
   if [ -d "$HOME/Library/Application Support/Code/User" ]; then
     echo "Installing VSCode Settings"
@@ -60,7 +78,7 @@ fi
 
 echo "Linking home dir config files"
 pushd $DIR > /dev/null
-stow --target=$HOME bash farpoint git hg shell zsh
+stow --target=$HOME git hg zsh
 popd > /dev/null
 
 echo "Setup is done!"
