@@ -16,7 +16,7 @@
     "git.enableSmartCommit": true,
     "diffEditor.ignoreTrimWhitespace": true,
     "python.jediEnabled": false,
-    "workbench.colorTheme": "Quiet Light",
+    "workbench.colorTheme": "GitHub Dark Default",
     "files.autoSave": "afterDelay",
     "terminal.integrated.scrollback": 10000,
     "java.semanticHighlighting.enabled": true,
