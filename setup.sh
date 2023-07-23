@@ -76,6 +76,9 @@ if [ -f "$HOME/.bash_profile" -a ! -f "$HOME/.bash_profile_local" ]; then
   mv $HOME/.bash_profile $HOME/.bash_profile_local
 fi
 
+echo "Installing vscode extensions"
+cat vscode/extensions.txt | xargs -L 1 code --install-extension
+
 echo "Linking home dir config files"
 pushd $DIR > /dev/null
 stow --target=$HOME git hg zsh
