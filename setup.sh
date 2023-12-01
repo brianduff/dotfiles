@@ -25,19 +25,22 @@ if [ "$(uname)" == "Darwin" ]; then
   fi
 
 
-  if [ -d "$HOME/Library/Application Support/Code/User" ]; then
+  if [ -x "$(command -v code)" ]; then
     echo "Installing VSCode Settings"
-    mv -f $HOME/Library/Application\ Support/Code/User/settings.json $HOME/Library/Application\ Support/Code/User/settings.json.bak
-    ln -s $DIR/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+    mkdir -p "$HOME/Library/Application Support/Code/User"
+    if [ -f "$HOME/Library/Application Support/Code/User/settings.json" ]; then
+      mv -f "$HOME/Library/Application Support/Code/User/settings.json" "$HOME/Library/Application Support/Code/User/settings.json.bak"
+    fi
+    ln -s $DIR/vscode/settings.json "$HOME/Library/Application\ Support/Code/User/settings.json"
   else
     echo "Skipped installing VSCode Settings. Install VS Code and run setup.sh again"
   fi
 
-  if [ ! -f "$HOME/Library/Application Support/iTerm2/DynamicProfiles/iterm-profiles.json" ]; then
-    echo "Installing iTerm 2 Dynamic Profiles"
-    mkdir -p "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
-    ln -s $DIR/config/iterm-profiles.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles/iterm-profiles.json"
-  fi
+#  if [ ! -f "$HOME/Library/Application Support/iTerm2/DynamicProfiles/iterm-profiles.json" ]; then
+#    echo "Installing iTerm 2 Dynamic Profiles"
+#    mkdir -p "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
+#    ln -s $DIR/config/iterm-profiles.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles/iterm-profiles.json"
+#  fi
 
 else
   # Assuming linux :{}
@@ -73,10 +76,10 @@ fi
 echo "Installing vscode extensions"
 cat vscode/extensions.txt | xargs -L 1 code --install-extension
 
-#if ! [ -x "$(command -v cargo)" ]; then
+if ! [ -x "$(command -v cargo)" ]; then
   echo "Installing Rust"
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-#fi
+fi
 
 echo "Linking home dir config files"
 pushd $DIR > /dev/null
