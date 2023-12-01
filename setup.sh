@@ -73,6 +73,11 @@ fi
 echo "Installing vscode extensions"
 cat vscode/extensions.txt | xargs -L 1 code --install-extension
 
+echo "Installing Rust"
+if ! [ -x "$(command -v cargo)" ]; then
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+fi
+
 echo "Linking home dir config files"
 pushd $DIR > /dev/null
 stow --target=$HOME git hg zsh
