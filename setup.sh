@@ -31,7 +31,7 @@ if [ "$(uname)" == "Darwin" ]; then
     if [ -f "$HOME/Library/Application Support/Code/User/settings.json" ]; then
       mv -f "$HOME/Library/Application Support/Code/User/settings.json" "$HOME/Library/Application Support/Code/User/settings.json.bak"
     fi
-    ln -s $DIR/vscode/settings.json "$HOME/Library/Application\ Support/Code/User/settings.json"
+    ln -s $DIR/vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
   else
     echo "Skipped installing VSCode Settings. Install VS Code and run setup.sh again"
   fi
