@@ -80,7 +80,7 @@ fi
 
 echo "Linking home dir config files"
 pushd $DIR > /dev/null
-stow --target=$HOME git hg zsh
+stow --target=$HOME zsh
 popd > /dev/null
 
 echo "Setup is done!"
