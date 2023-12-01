@@ -73,8 +73,8 @@ fi
 echo "Installing vscode extensions"
 cat vscode/extensions.txt | xargs -L 1 code --install-extension
 
-echo "Installing Rust"
 if ! [ -x "$(command -v cargo)" ]; then
+  echo "Installing Rust"
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 fi
 
