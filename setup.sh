@@ -18,12 +18,6 @@ if [ "$(uname)" == "Darwin" ]; then
     brew install visual-studio-code
   fi
 
-  if ! [ -x "$(command -v cargo)" ]; then
-    echo "Installing rust..."
-    brew install rust
-  fi
-
-
   if ! [ -x "$(brew list font-fira-code 2>&1 > /dev/null)" ]; then
     echo "Installing fira code font..."
     brew tap homebrew/cask-fonts
